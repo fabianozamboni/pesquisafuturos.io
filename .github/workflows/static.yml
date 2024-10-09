@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-top: 5px;
+            resize: vertical;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formulário de Pesquisa</h2>
+    <form action="salvar.php" method="POST">
+        <label for="mercado">Qual é o seu mercado de atuação?</label>
+        <textarea id="mercado" name="mercado" required></textarea>
+
+        <label for="atuacao">Quais foram as principais áreas de atuação da sua empresa nos últimos 5 anos?</label>
+        <textarea id="atuacao" name="atuacao" required></textarea>
+
+        <label for="desafios">Quais são os maiores desafios enfrentados atualmente pela sua empresa?</label>
+        <textarea id="desafios" name="desafios" required></textarea>
+
+        <label for="tecnologias">Quais tecnologias ou metodologias emergentes sua empresa já adotou ou pretende adotar?</label>
+        <textarea id="tecnologias" name="tecnologias" required></textarea>
+
+        <label for="necessidades">Quais são as necessidades mais comuns dos seus clientes?</label>
+        <textarea id="necessidades" name="necessidades" required></textarea>
+
+        <label for="futuro">Qual é a sua visão para o futuro do seu setor nos próximos 5, 10 e 15 anos?</label>
+        <textarea id="futuro" name="futuro" required></textarea>
+
+        <label for="expansao">Sua empresa planeja expandir para novos mercados ou oferecer novos produtos/serviços? Se sim, quais?</label>
+        <textarea id="expansao" name="expansao" required></textarea>
+
+        <label for="investimento">Qual é o nível de investimento atual em inovação e desenvolvimento de novos produtos ou serviços?</label>
+        <textarea id="investimento" name="investimento" required></textarea>
+
+        <label for="ameacas">Quais são as principais ameaças que podem impactar o crescimento do seu setor?</label>
+        <textarea id="ameacas" name="ameacas" required></textarea>
+
+        <label for="geografia">Em qual geografia sua empresa opera atualmente? Pretende expandir para novas regiões?</label>
+        <textarea id="geografia" name="geografia" required></textarea>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+</body>
+</html>
+
